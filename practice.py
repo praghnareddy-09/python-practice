@@ -30,3 +30,10 @@ print(age, height, name, are_you_a_student, something)
 print(type(age), type(height), type(name), type(are_you_a_student), type(something))
 print(len(str(age)), len(str(height)), len(name), len(str(are_you_a_student)), len(str(something)))
 
+text = "968-Maria, ( D@t@ Engineer );; 27y "
+name = text.split("-")[1].split(",")[0].strip()
+role = text.split("(")[1].split(")")[0].strip()
+age = text.split(";;")[1].strip()
+print(f"Name: {name}\nRole: {role}\nAge: {age}")
+print(f"name: {name} | role: {role} | age: {age}") 
+
